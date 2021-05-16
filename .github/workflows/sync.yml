@@ -6,10 +6,17 @@ on:
   schedule:
      # actually, ~5 minutes is the highest
      # effective frequency you will get
-    - cron:  '38 * * * *'
+    - cron:  '*/10 * * * *'
   push:
     paths-ignore:
-      - .github/workflows/*.yml
+      - .github/workflows/bintray.yml
+      - .github/workflows/cui.yml
+      - .github/workflows/doc.yml
+      - .github/workflows/main.yml
+      - .github/workflows/shadow.yml
+      - .github/workflows/sync.yml
+      - .github/workflows/sync.yml
+      - .github/workflows/build.yml
 jobs:
   merge:
     runs-on: ubuntu-latest
