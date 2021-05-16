@@ -2,8 +2,8 @@
 # https://stackoverflow.com/questions/23793062/can-forks-be-synced-automatically-in-github
 
 name: Merge upstream branches
-# env:
-#   GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+env:
+  GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
 on:
   schedule:
      # actually, ~5 minutes is the highest
