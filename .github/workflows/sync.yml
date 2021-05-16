@@ -38,7 +38,7 @@ jobs:
 
           git remote add upstream https://github.com/mamoe/mirai.git
           
-          git remote set-url origin https://foxes1998:${{ secrets.MY_GITHUB_TOKEN }}@github.com/mirai.git
+          git remote set-url origin https://foxes1998:${{ secrets.MY_GITHUB_TOKEN }}@github.com/foxes1998/mirai.git
           
           git fetch upstream
 
