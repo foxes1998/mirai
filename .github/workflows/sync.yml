@@ -40,6 +40,8 @@ jobs:
           
           git remote set-url origin https://foxes1998:${{ secrets.MY_GITHUB_TOKEN }}@github.com/foxes1998/mirai.git
           
+          git config --list
+          
           git fetch upstream
 
           # Neither forget the -b opt,
